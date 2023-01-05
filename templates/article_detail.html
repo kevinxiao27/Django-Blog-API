@@ -4,11 +4,16 @@
 <html>
 <body>
 
-<h1>{{ article.title }}</h1>
-<small> Written By: Kevin Xiao </small> <br/>
-<hr>
+<div class="container">
+    <div class="col-md-12 card mb-4  mt-3 left  top">
+        <div class="card-body">
+            <h1>{{ article.title }}</h1>
+            <small class="text-muted"> Written By: [your name] | {{ article.created_on}} </small> <br/>
+            <p class="card-text">{{ article.content }}</p>
+        </div>
+    </div>
+</div>
 
-{{ article.content }}
 </body>
 </html>
 {% endblock %}

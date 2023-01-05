@@ -2,15 +2,35 @@
 {% block content %}
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+    h1, h2, h3, p, a {
+        margin-right: 4rem;
+        margin-left: 4rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        width: 70%;
+    }
+</style>
+    <!-- change title to whatever you want -->
+<title>My Website</title>
+</head>
 <body>
 
-<h1>Kevin's Website</h1>
-<s1>About Me</s1><br/>
-<p>I am a grade 12 student at Sir Winston Churchill Highschool in the IB diploma program</p>
+<h1>[Your Name]'s Website</h1>
+<h2>About Me</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+ sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+ in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+ cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-<h1>Projects</h1>
+<a href="{% url 'projects' %}">Projects</a>
 
-<h1>Blog</h1>
+<a href="{% url 'projects' %}">Blog</a>
 
 </body>
 </html>
