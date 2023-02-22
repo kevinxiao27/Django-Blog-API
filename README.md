@@ -1,8 +1,16 @@
 # Django-Blog-API
-Personal website with API for a blog and articles, built with Django (in python 3)
+Personal website with API for a blog and articles, built with Django (in python 3).
+Requires Django Installation.
+settings.py should auto generate. Before deploying, ensure that the secret key is hidden.
 
-To test your own changes to this project, make sure the project is run as a virtual environment and use the command after navigating 
-to the project's directory "py manage.py runserver"
 
-In order to add blog posts or articles through the admin page, create a super user in the terminal using the command
-"python manage.py createsuperuser"
+### To Clone Repository
+`git clone https://github.com/kevinxiao27/Django-Blog-API`
+
+### Getting Started
+#### Available Commands
+`py manage.py runserver`
+Starts test server
+
+`python manage.py createsuperuser`
+Creates super user to allow access to API posts
